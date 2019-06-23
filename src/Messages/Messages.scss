@@ -1,0 +1,35 @@
+@import '~bootstrap/scss/bootstrap-reboot';
+
+.messages {
+  background:  #f9f9f9;
+  &__form {
+    height: 60px;
+    padding: 15px;
+    textarea{
+      resize: none;
+      outline: none;
+    }
+    &__btn{
+      @include font-size(40px)
+    }
+  }
+}
+.message{
+  padding:10px 20px;
+  figure{
+    @include size(40px);
+    background: gray;
+    min-width: 40px;
+    img{
+      @include size(inherit);
+      object-fit: cover;
+    }
+  }
+  &__time{
+    @include font-size(12px);
+    color:#ccc;
+  }
+  &__text{
+    max-width: 300px;
+  }
+}

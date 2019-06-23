@@ -1,0 +1,53 @@
+@mixin login-registration {
+  @import "~bootstrap/scss/bootstrap-reboot";
+
+  .main {
+    background: #000;
+    &__container {
+      background: url('../assets/images/login-bg.jpg') no-repeat center;
+      background-size: cover;
+      padding: 15px;
+      filter: blur(8px);
+    }
+  }
+
+  .login {
+    padding: 15px;
+    left: 0;
+    right: 0;
+    top: 0;
+    &__form {
+      width: 500px;
+      background: rgba(255, 255, 255, 1);
+      padding: 50px 30px;
+    }
+  }
+  //@include media-breakpoint-down(lg) {
+  //  .login {
+  //    &__form {
+  //      padding: 40px 20px;
+  //    }
+  //  }
+  //}
+  //@include media-breakpoint-down(sm) {
+  //  .login {
+  //    &__form {
+  //      input {
+  //        @include font-size(14px)
+  //      }
+  //      &__title{
+  //        @include font-size(20px)
+  //      }
+  //    }
+  //  }
+  //}
+  //@include media-breakpoint-down(xs) {
+  //  .login {
+  //    &__form {
+  //      input {
+  //        @include font-size(12px)
+  //      }
+  //    }
+  //  }
+  //}
+}

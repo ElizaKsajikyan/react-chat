@@ -1,0 +1,47 @@
+@import '~bootstrap/scss/bootstrap-reboot';
+
+.chat-sidebar {
+  width: 300px;
+  max-height: 100vh;
+  height: 100vh;
+  background:  #f9f9f9;
+  .users-list {
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+  }
+  .user {
+    background: #fff;
+    padding: 20px 20px ;
+    cursor: pointer;
+    &__image {
+      @include size(30px);
+      background: red;
+      img{
+        @include size(inherit);
+        object-fit: cover;
+      }
+    }
+    &__name {
+      @include font-size(14px);
+      color: #787676;
+    }
+    &__status {
+      @include size(10px);
+      transform: translateY(-50%);
+      top: 50%;
+      right: 0;
+    }
+    @include hover-focus-active{
+      background: #f9f9f9;
+    }
+    &.active{
+      background: #f9f9f9;
+    }
+  }
+  &__footer {
+    padding: 10px 20px;
+    &__btn{
+      @include font-size(25px)
+    }
+  }
+}

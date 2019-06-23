@@ -1,3 +1,2 @@
-/**
- * Created by Eliza on 6/23/2019.
- */
+import Login from './Login';
+export default Login;

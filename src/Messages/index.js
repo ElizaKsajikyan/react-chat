@@ -1,3 +1,2 @@
-/**
- * Created by Eliza on 6/23/2019.
- */
+import Messages from './Messages';
+export default Messages;
